@@ -1,0 +1,464 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+.sidebar {  
+    height: 100%;  
+    width: 250px;  
+    position: fixed;  
+    top: 0;  
+    left: 0;   
+    background-color:#243d5d;  
+    transition: width 0.3s ease, left 0.3s ease;  
+    z-index: 1;  
+}  
+
+.sidebar a {  
+    padding: 8px;  
+    text-decoration: none;  
+    font-size: 25px;  
+    color: white;  
+    display: block;  
+}  
+
+.sidebar a:hover {  
+    background-color:black;  
+}  
+
+/* preloader */
+#preloader{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    background:#243d5d url(./images/preloader\ imagde.gif) no-repeat center;
+    background-size: 50%;
+    height: 100vh;
+
+    
+}
+
+
+
+.main-content2{  
+    
+    padding: 20px;  
+    background-color: rgba(0, 0, 0, 0.749);
+    color:white;
+    
+}  
+.open-btn{
+    display: none;
+}
+.close-btn{
+    display: none;
+}
+
+    /* portfolio_info */
+    .portfolio_info{
+        color: white;
+        margin-left: 15px;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }  
+    .icon p{
+        background-color: black;
+        padding: 9px;
+        border-radius: 20%;
+    
+    }
+    .image{
+
+         width: 200px;
+         height: 200px;
+         object-fit: cover;
+         border-radius: 50%; 
+         border: 5px solid #333; 
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* self writin text */
+    body {  
+        /* background-color: black;   */
+        color:black;  
+        font-family: Arial, sans-serif;  
+      
+        margin: 0;  
+        height: 10vh;
+    }  
+    
+    .container {  
+        text-align: center;  
+       
+    }  
+    
+    
+    .Adun{
+        text-align:center;
+        font-family: sans-serif;
+        font-size: 29px;
+    }
+    @keyframes blink {  
+        50% {  
+            opacity: 0;  
+        }  
+    }
+
+    
+      .text-container {
+        font-size: 29px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        color: white;
+      }
+      .cursor {
+        display: inline-block;
+        width: 10px;
+        height: 24px;
+        background-color: #333;
+        animation: blink 0.5s steps(1) infinite;
+      }
+      @keyframes blink {
+        50% {
+          background-color: transparent;
+        }
+    }
+        /* about */
+        .About{
+            padding: 0 300px;
+            color: #243d5d;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .border{
+            border: 3px solid #243d5d;
+           padding-left:0 3px;
+          margin-right: 790px;
+
+        }
+        .adun_work{
+            margin-left: 260px;
+            font-size: 22px;
+        }
+        .adun_workimg{
+            margin-left: 260px;
+            border-radius:12px;
+        }
+        .Frontend{
+            margin-top: 34px;
+            /* margin-left: 260px; */
+        }
+        .Frontend p{
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .Frontend_container{
+            display: flex;
+            
+            gap: 12px;
+            justify-content: space-between;
+        }
+        .img1{
+            width: 40vw;
+            /* height: 90vh; */
+            margin-left: 260px;
+        }
+        .projects{
+            margin-top: 20px;
+            font-family:sans-serif ;
+            text-align: center;
+        }
+        .img1,.img2{
+            border-radius: 8px;
+        }
+        .portfolio_image{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            
+        }
+        .portfolio_container{
+            background-color:#dce8f8;
+        }
+
+        .learn_btn{
+            text-align: center;
+            
+        }
+        .learn{
+            padding:8px  20px;
+            margin-bottom: 10px;
+            background-color: #243d5d;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .learn a{
+            text-decoration: none;
+            color: white;
+        }
+
+ 
+  
+ 
+            /* services */
+            .services{
+                margin-left: 270px;
+                margin-top: 22px;
+                font-family: sans-serif;
+                font-size: 20px;
+            
+            }
+            .service1{
+                margin-left: 100px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                font-size: 20px;
+                align-items: center;
+
+            }
+            .service{
+                margin-left:200px; 
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                font-size: 20px;
+                align-items: center;
+            }
+            .service1:hover{
+                color: #243d5d;
+                cursor: pointer;
+                transition: 3s;
+                
+            }
+            .service-icon{
+                display: none;
+                    width: 50px;   
+                    height: 50px;   
+                    background-color:#243d5d; 
+                    color: white;
+                    border-radius: 50%; 
+                    margin-bottom: 10px;
+                    display: flex;  
+                    align-items: center;  
+                    justify-content: center;  
+                
+                
+              
+            }
+            .passion{
+                margin-left:190px;
+              
+        
+            }
+            .passion1{
+                margin-left:190px;
+                
+            }
+            .services_container{
+                display: flex;
+                /* gap: 10px; */
+                padding: 0 120px;
+                justify-content: center;
+            }
+            .container_form{
+         margin-left: 280px;
+
+            }
+            /* skills */
+            .skills{
+              
+                background-color: #dce8f8;
+            }
+            .skill{
+                margin-left: 290px;
+                margin-top: 19px;
+                font-size: 20px;
+            }
+            .progress1{
+                margin-left: 500px;
+            }
+           
+            
+            .container {  
+                max-width: 600px;  
+                margin: auto;  
+            }  
+            
+            .skill {  
+                margin-bottom: 20px;  
+            }  
+            
+            .progress-bar {  
+                background-color:#243d5d;  
+                border-radius: 25px;  
+                overflow: hidden;  
+            }  
+            
+            .progress {  
+                /* background-color: #3b82f6; Change color as needed   */
+                height: 25px;  
+                border-radius: 25px;  
+            }  
+            
+            .span2 {  
+                display: block;  
+                margin: 5px 0;  
+            }
+            .contact{
+                margin-left: 270px;
+                margin-top: 22px;
+            }
+            .contact h1 {
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            .contact p{
+                font-size: 20px;
+            }
+            .back-to-top{
+            margin-left: 700px;
+
+            }
+
+            
+            .content {  
+                height: 2000px;
+            }  
+            
+             .back-to-top {  
+                position: fixed;  
+                bottom: 30px;  
+                right: 30px;  
+                background-color: #007BFF;  
+             color: white;  
+                border: none;  
+                border-radius: 50%;  
+                width: 50px;  
+                height: 50px;  
+                font-size: 24px;
+                display: none;  
+             cursor: pointer;   
+         }   
+            
+             .back-to-top:hover {  
+                background-color: #0056b3; 
+            } 
+    /* Responsive design */  
+@media screen and (max-width: 1105px) {  
+    .sidebar {  
+        left: -250px; 
+        width: 250px;
+       
+    }  
+    .sidebar.active {  
+        left: 0;  
+    }  
+    .main-content {  
+        margin-left: 0;
+        
+    }  
+    .open-btn {  
+        display: block; 
+        font-size: 30px;  
+        cursor: pointer;  
+        background: none;  
+        border: none;  
+        z-index: 1;
+
+    }
+    .close-btn {  
+        font-size: 30px;  
+        color: white;  
+        background: none;  
+        border: none;  
+        cursor: pointer; 
+        display: block;
+    }  
+    .About{
+        padding:0 10px;
+    }
+    .adun_work{
+        margin: 0;
+    }
+    .adun_workimg{
+        margin: 0 10px;
+        width: 80vw;
+        height: 50vh;
+        }
+        .Frontend{
+            margin: 0;
+        }
+        .Frontend_container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .portfolio_image{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .img1{
+            margin: 0;
+            width: 80vw;
+                }
+                .img2{
+                    width: 80vw;
+                    height: 20vh;
+                }
+                .services{
+                    margin: 0;
+                }
+                .service{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0;
+                }
+                .service1{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0;
+                }
+                .services_container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0;
+                }
+                .service1{
+                    margin: 0;
+                }
+                .passion,.passion1{
+                    margin: 0;
+                }
+                .skill{
+                    margin: 0;
+                }
+                .progress1{
+                    margin: 0;
+                }
+                .learn_btn{
+                    margin-top: 20px;
+                }
+                .portfolio_container{
+                    padding:0 20px;
+                }
+                .contact{
+                    margin: 0;
+                }
+                .container_form{
+                    margin: 0;
+                }
+            }
