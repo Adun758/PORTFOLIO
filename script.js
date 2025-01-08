@@ -5,6 +5,37 @@ function toggleSidebar() {
 
  
 
+// // Wait for the page to fully load
+// window.addEventListener('load', () => {
+//   const preloader = document.getElementById('preloader');
+//   const content = document.getElementById('content');
+  
+//   // Hide the preloader
+//   preloader.style.display = 'none';
+  
+//   // Show the content
+//   content.style.display = 'block';
+// });
+
+
+// Timer for the preloader
+let countdown = 2; // 3 seconds
+const timerElement = document.getElementById("timer");
+const preloader = document.getElementById("preloader");
+const content = document.getElementById("content");
+
+// Update timer every second
+const interval = setInterval(() => {
+  countdown--;
+  timerElement.textContent = countdown;
+
+  // When timer ends, hide preloader and show content
+  if (countdown <= 0) {
+    clearInterval(interval);
+    preloader.style.display = "none"; // Hide preloader
+    content.style.display = "block";  // Show content
+  }
+}, 1000);
 
   
 
